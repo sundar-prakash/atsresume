@@ -19,7 +19,7 @@ const Education = ({education, index}) => {
           placeholder="School"
           name="school"
           className="w-full other-input"
-          value={education.school}
+          value={education.school || ""}
           onChange={(e) =>
             handleEducation(resumeData, setResumeData, e, index)
           }
@@ -29,7 +29,7 @@ const Education = ({education, index}) => {
           placeholder="Degree"
           name="degree"
           className="w-full other-input"
-          value={education.degree}
+          value={education.degree || ""}
           onChange={(e) =>
             handleEducation(resumeData, setResumeData, e, index)
           }
@@ -40,7 +40,7 @@ const Education = ({education, index}) => {
             placeholder="Start Year"
             name="startYear"
             className="flex-1 m-0 other-input"
-            value={education.startYear}
+            value={education.startYear || ""}
             onChange={(e) =>
               handleEducation(resumeData, setResumeData, e, index)
             }
@@ -50,7 +50,7 @@ const Education = ({education, index}) => {
             placeholder="End Year"
             name="endYear"
             className="flex-1 m-0 other-input"
-            value={education.endYear}
+            value={education.endYear || ""}
             onChange={(e) =>
               handleEducation(resumeData, setResumeData, e, index)
             }

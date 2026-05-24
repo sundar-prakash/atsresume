@@ -50,7 +50,7 @@ const LoadUnload = () => {
           onClick={(event) =>
             handleDownload(
               resumeData,
-              resumeData.name + " by ATSResume.json",
+              resumeData.name + " by zingibzz.json",
               event
             )
           }
