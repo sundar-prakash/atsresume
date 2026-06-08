@@ -8,7 +8,7 @@ const Page = () => {
       <Builder/>
       <footer className="mt-auto bg-gray-800 text-white py-4 text-center text-sm exclude-print">
         <div className="flex justify-center gap-6">
-          <Link href="https://github.com/sundar-prakash" className="hover:text-indigo-400 transition-colors">
+          <Link href="https://www.resumego.net/resume-checker/" className="hover:text-indigo-400 transition-colors">
             Resume Checker
           </Link>
           <Link href="https://github.com/sundar-prakash/atsresume" className="hover:text-indigo-400 transition-colors">
