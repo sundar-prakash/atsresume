@@ -6,13 +6,9 @@ import Summary from "../components/Summary";
 import Educations from "../components/education/ui/Educations";
 import WorkExperiences from "../components/workExperience/ui/WorkExperiences";
 import Projects from "../components/projects/ui/Projects";
-import dynamic from "next/dynamic";
+import Skills from "../components/skills/ui/Skills";
 import Languages from "../components/languages/ui/Languages";
 import TestsAndCertifications from "../components/testsAndCertifications/ui/TestsAndCertifications";
-
-const Skills = dynamic(() => import("../components/skills/ui/Skills"), {
-  ssr: false,
-});
 
 const Form = () => {
   return (
