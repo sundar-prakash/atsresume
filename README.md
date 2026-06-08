@@ -4,11 +4,14 @@ A cutting-edge resume builder that helps job seekers create a professional, ATS-
 
 ## Demo
 
-#### [https://atsresume.vercel.app/](https://atsresume.vercel.app/)
+#### [https://resumebuilder.zingbizz.com/](https://resumebuilder.zingbizz.com/)
+
 ![image](https://user-images.githubusercontent.com/61316762/218017511-fbbaa7da-6154-449f-9e46-8de45b0e6c29.png)
 
 ### Resume Score
+
 #### https://www.resumego.net/resume-checker/
+
 ![image](https://user-images.githubusercontent.com/61316762/218143206-f0e5e764-52bc-4c25-84f2-6b2fff00cd4b.png)
 
 ## Change Log
@@ -95,7 +98,7 @@ Description optional
 
 ## How to Add Key Achievements
 
-Key achievements are the most important part of your resume. 
+Key achievements are the most important part of your resume.
 
 - Add key achievements to your resume to make it more attractive and increase your chances of getting noticed by employers.
 - Add key achievements to your work experience and projects.
@@ -120,4 +123,4 @@ Please make sure to update tests as appropriate.
 ## Authors and acknowledgment
 
 - [Sundar Prakash](https://github.com/sundar-prakash)
-\n## Original Creator\n\nThis project is a fork of ATSResume originally created by [Saurav Hathi](https://github.com/sauravhathi).
+  \n## Original Creator\n\nThis project is a fork of ATSResume originally created by [Saurav Hathi](https://github.com/sauravhathi).

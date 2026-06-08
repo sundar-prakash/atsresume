@@ -13,6 +13,9 @@ import TestsAndCertifications from "../components/testsAndCertifications/ui/Test
 const Form = () => {
   return (
     <form className="p-4 bg-indigo-600 exclude-print md:max-w-[40%] md:h-screen md:overflow-y-scroll">
+      <h1 className="text-3xl font-extrabold text-white text-center mb-6 tracking-wide drop-shadow-sm">
+        ATSResume
+      </h1>
       <LoadUnload/>
       <PersonalInformation/>
       <SocialMedias/>
