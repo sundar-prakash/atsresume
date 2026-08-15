@@ -1,6 +1,6 @@
 "use client"
 
-import React, {createContext, useState} from "react";
+import React, {createContext, useState, useEffect} from "react";
 import FormCloseOpenBtn from "../components/FormCloseOpenBtn";
 import Preview from "../components/preview/ui/Preview";
 import DefaultResumeData from "../components/utility/DefaultResumeData";
@@ -17,6 +17,12 @@ const Print = dynamic(() => import("../components/utility/WinPrint"), {
 export default function Builder() {
   // resume data
   const [resumeData, setResumeData] = useState(DefaultResumeData);
+
+  // sync document title with person's name for clean PDF export / browser title
+  useEffect(() => {
+    const cleanName = resumeData?.name?.trim();
+    document.title = cleanName ? `${cleanName} - Resume` : "Resume";
+  }, [resumeData?.name]);
 
   // form hide/show
   const [formClose, setFormClose] = useState(false);

@@ -12,13 +12,12 @@ export const metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "https://resumebuilder.zingbizz.com/assets/favicon.ico",
+    icon: "/assets/favicon.ico",
   },
   openGraph: {
-    title: "ATSResume | Get hired with an ATS-optimized resume",
-    description: "ATSResume is a cutting-edge resume builder that helps job seekers create a professional, ATS-friendly resume in minutes. Our platform uses the latest technology to analyze and optimize your resume for maximum visibility and success with applicant tracking systems.",
-    url: "https://resumebuilder.zingbizz.com/",
-    siteName: "ATSResume",
+    title: "Resume Builder",
+    description: "Create a professional, ATS-friendly resume in minutes.",
+    siteName: "Resume Builder",
     locale: "en_US",
     type: "website",
     images: [
@@ -32,9 +31,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ATSResume | Get hired with an ATS-optimized resume",
-    description: "ATSResume is a cutting-edge resume builder that helps job seekers create a professional, ATS-friendly resume in minutes. Our platform uses the latest technology to analyze and optimize your resume for maximum visibility and success with applicant tracking systems.",
-    images: ["https://resumebuilder.zingbizz.com/assets/logo.png"],
+    title: "Resume Builder",
+    description: "Create a professional, ATS-friendly resume in minutes.",
   },
   robots: {
     index: true,
@@ -94,4 +92,5 @@ export default function RootLayout({children}) {
     </html>
   );
 }
+
 
