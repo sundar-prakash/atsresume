@@ -20,9 +20,18 @@ export default function Builder() {
 
   // sync document title with person's name for clean PDF export / browser title
   useEffect(() => {
-    const cleanName = resumeData?.name?.trim();
-    document.title = cleanName ? `${cleanName} - Resume` : "Resume";
-  }, [resumeData?.name]);
+    const cleanName = resumeData?.name?.trim()?.toLowerCase()?.replace(/\s+/g, "-");
+    const cleanRole = resumeData?.position?.trim()?.toLowerCase()?.replace(/\s+/g, "-");
+    
+    let newTitle = "resume";
+    if (cleanName && cleanRole) {
+      newTitle = `${cleanName}-${cleanRole}-resume`;
+    } else if (cleanName) {
+      newTitle = `${cleanName}-resume`;
+    }
+    
+    document.title = newTitle;
+  }, [resumeData?.name, resumeData?.position]);
 
   // form hide/show
   const [formClose, setFormClose] = useState(false);
